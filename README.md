@@ -15,3 +15,10 @@ Requirements:
      
    Then need to install publish over ssh plugin in Jenkins and add all the three servers under Manage Jenkins-->Configure system
     (Need to give hostname(public Ip address), Username(ubuntu) and password (password need to create if not crated- cmd# passwd ubuntu)
+    
+    =====================================
+    * Jenkins--> Free style project
+    * Provide the github URL
+    * In the build section, select "send files or execure commands over ssh"
+       Send the files from Jenkins server to Ansible server(rsync - avh/var/lib/jenkins/workspace/2NDPORJECT/* root@172.31.12.119:/opt )
+    
